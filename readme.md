@@ -66,5 +66,17 @@ INSTRUCTION FORMATS:
 |        1 | Display Register          |          8 |           8 |
 |        1 | Keypad + Register         |          0 |           0 |
 
+###Control Unit
+Inputs: 3 bit opcode
+Outputs: ALU code, ALU?, Store?
+
+### Multiplier ###
+Booth Encoded Wallace Tree
+
+Parts: 
+Booth Encoder
+Partial Product
+Carry Save Adder
+
 
 
