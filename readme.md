@@ -7,7 +7,7 @@ TASKS
 | DECIDE ON OPCODES | 0%     |
 | CU                | 0%     |
 | ALU               | 50%    |
-| STORE             | 0%     |
+| STORE             | 75%    |
 | MULT              | 98%    |
 | SUB               | 100%   |
 | COMP              | 100%   |
