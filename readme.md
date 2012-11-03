@@ -71,12 +71,15 @@ Inputs: 3 bit opcode
 Outputs: ALU code, ALU?, Store?
 
 ### Multiplier ###
-Booth Encoded Wallace Tree
+implemented in multiplication.circ
+Booth 2 Encoded Wallace Tree
 
 Parts: 
-Booth Encoder
-Partial Product
-Carry Save Adder
+Booth Encoder: Done.
+Partial Product: Done.
+Carry Save Adder: Used Library
+
+The multiplier works for all inputs except -128 since there is no way to represent 128 in a byte in 2's complement form. This should be solvable through a sign extend from 8-9 bits and then doing 2's complement. Whether this is worth it is up for debate. Another option is simply refusing to multiply by -128 limiting the range to [-127,127]. If the user attempts to do it we can raise an error or something along those lines. 
 
 
 
