@@ -1,3 +1,20 @@
+TASKS
+
+|        Task       | Status |
+|-------------------|--------|
+| IR                | DONE   |
+| FETCH             | DONE   |
+| DECIDE ON OPCODES | 0%     |
+| CU                | 0%     |
+| ALU               | 50%    |
+| STORE             | 0%     |
+| MULT              | 98%    |
+| SUB               | 100%   |
+| COMP              | 100%   |
+| ADD               | 100%   |
+
+
+
 ## Stage 1: Retrieve one instruction from cache ##
 
     1. PUSH PC -> FETCH stage
