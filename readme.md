@@ -41,7 +41,7 @@ INSTRUCTION FORMATS:
 | READ     | [0-2][3]      |
 | STOP     | [0-2]         |
 | BRANCH   | [0-2][3][4-7] |
-| JUMP     | [0-2][3-6]    |
+| JUMP     | [0-2][3][4-7] |
 
 
 | OPTIONAL INSTRUCTIONS   ||
