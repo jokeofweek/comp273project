@@ -4,8 +4,8 @@ TASKS
 |-------------------|--------|
 | IR                | DONE   |
 | FETCH             | DONE   |
-| DECIDE ON OPCODES | 0%     |
-| CU                | 0%     |
+| DECIDE ON OPCODES | 100%   |
+| CU                | 50%    |
 | ALU               | 50%    |
 | STORE             | 75%    |
 | MULT              | 98%    |
@@ -85,7 +85,7 @@ INSTRUCTION FORMATS:
 
 ###Control Unit
 Inputs: 3 bit opcode
-Outputs: ALU code, ALU?, Store?
+Outputs: ALU code, register?, ramwrite?,branch?
 
 ### Multiplier ###
 implemented in multiplication.circ
