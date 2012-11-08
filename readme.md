@@ -1,3 +1,7 @@
+Issues:
+Everything needs to pass through the buffers, nothing can go from the control unit directly. Only one case of this left, the selector after the alu. 
+
+
 TASKS
 
 |        Task       | Status |
