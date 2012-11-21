@@ -4,15 +4,15 @@ Everything needs to pass through the buffers, nothing can go from the control un
 
 TASKS
 
-|        Task       | Status |
+| Task              | Status |
 |-------------------|--------|
 | IR                | DONE   |
 | FETCH             | DONE   |
 | DECIDE ON OPCODES | 100%   |
 | CU                | 50%    |
-| ALU               | 50%    |
-| STORE             | 75%    |
-| MULT              | 98%    |
+| ALU               | DONE   |
+| STORE             | DONE   |
+| MULT              | DONE   |
 | SUB               | 100%   |
 | COMP              | 100%   |
 | ADD               | 100%   |
@@ -55,12 +55,12 @@ INSTRUCTION FORMATS:
 
 | OPCODE | FORMAT           | Bit |      |
 | :----- | :--------------- | --- | ---- |
-| N/A    | [0-2][3][4]      | 011 |      |
+| STOP   | [0-2][3][4]      | 011 |      |
 | STORE  | [0-2][3][4-7]    | 001 | DONE |
-| LOAD   | [0-2][3][4-7]    | 010 |      |
+| LOAD   | [0-2][3][4-7]    | 010 | DONE |
 | PRINT  | [0-2][3]         | 100 | DONE |
 | READ   | [0-2][3]         | 011 | DONE |
-| STOP   | [0-2]            | 000 |      |
+| NOP    | [0-2]            | 000 | DONE |
 | BRANCH | [0-2][3][4-7]    | 101 |      |
 | ALU    | [0-2][3][4][5-7] | 111 | DONE |
 
