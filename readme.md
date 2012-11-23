@@ -16,7 +16,9 @@ TASKS
 | SUB               | 100%   |
 | COMP              | 100%   |
 | ADD               | 100%   |
-
+| STOP              | 100%   |
+| HALT/ON-OFF       | 0%     |
+| BRANCH            |
 
 
 ## Stage 1: Retrieve one instruction from cache ##
@@ -53,16 +55,16 @@ TASKS
 
 INSTRUCTION FORMATS:
 
-| OPCODE | FORMAT           | Bit |      |
-| :----- | :--------------- | --- | ---- |
-| STOP   | [0-2][3][4]      | 011 |      |
-| STORE  | [0-2][3][4-7]    | 001 | DONE |
-| LOAD   | [0-2][3][4-7]    | 010 | DONE |
-| PRINT  | [0-2][3]         | 100 | DONE |
-| READ   | [0-2][3]         | 011 | DONE |
-| NOP    | [0-2]            | 000 | DONE |
-| BRANCH | [0-2][3][4-7]    | 101 |      |
-| ALU    | [0-2][3][4][5-7] | 111 | DONE |
+| OPCODE | FORMAT           | Bit |            |
+| :----- | :--------------- | --- | ---------- |
+| STOP   | [0-2][3][4]      | 011 | NEEDS HALT |
+| STORE  | [0-2][3][4-7]    | 001 | DONE       |
+| LOAD   | [0-2][3][4-7]    | 010 | DONE       |
+| PRINT  | [0-2][3]         | 100 | DONE       |
+| READ   | [0-2][3]         | 011 | DONE       |
+| NOP    | [0-2]            | 000 | DONE       |
+| BRANCH | [0-2][3][4-7]    | 101 |            |
+| ALU    | [0-2][3][4][5-7] | 111 | DONE       |
 
 
 | FUNCTIONAL FIELD |     |
