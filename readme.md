@@ -1,6 +1,9 @@
 Issues:
 Everything needs to pass through the buffers, nothing can go from the control unit directly. Only one case of this left, the selector after the alu. 
 
+TODO:
+Hook up the power button to turn off the clock. Implement the HALT operation..
+
 
 TASKS
 
@@ -17,8 +20,8 @@ TASKS
 | COMP              | 100%   |
 | ADD               | 100%   |
 | STOP              | 100%   |
-| HALT/ON-OFF       | 0%     |
-| BRANCH            |
+| HALT/ON-OFF       | WIP    |
+| BRANCH            | 100%   |
 
 
 ## Stage 1: Retrieve one instruction from cache ##
