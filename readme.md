@@ -60,17 +60,22 @@ INSTRUCTION FORMATS:
 
 | OPCODE | FORMAT           | Bit |            |
 | :----- | :--------------- | --- | ---------- |
-| STOP   | [0-2][3][4]      | 011 | NEEDS HALT |
+| STOP   | [0-2][3][4][5-7] | 011 | DONE       |
 | STORE  | [0-2][3][4-7]    | 001 | DONE       |
 | LOAD   | [0-2][3][4-7]    | 010 | DONE       |
 | PRINT  | [0-2][3]         | 100 | DONE       |
 | READ   | [0-2][3]         | 011 | DONE       |
 | NOP    | [0-2]            | 000 | DONE       |
-| BRANCH | [0-2][3][4-7]    | 101 |            |
+| BRANCH | [0-2][3][4-7]    | 101 | DONE       |
 | ALU    | [0-2][3][4][5-7] | 111 | DONE       |
 
+| STOP FUNCTIONAL FIELD |     |
+| :-------------------- | :-- |
+| STOP                  | 000 |
+| HALT                  | 111 |
 
 | FUNCTIONAL FIELD |     |
+| :--------------- | :-- |
 | ADD              | 001 |
 | SUB              | 010 |
 | COMP             | 011 |
